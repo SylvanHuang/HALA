@@ -1,8 +1,8 @@
-% ====================== DPALA_Fixed (Dual-Population ALA + Fixed LSHADE) ======================
+% ======================  (Dual-Population ALA + Fixed LSHADE) ======================
 % 双种群算法：子种群1使用原ALA，子种群2使用LSHADE（禁用种群规模自适应缩减）
 % 固定两个子种群规模不变，彻底避免因规模变化导致的索引/维度/Position异常问题
 % 兼容原7个输出参数，确保Position始终为数值行向量
-% 论文标题可写：HALA: A Hybrid Dual-Population Optimizer Based on ALA and LSHADE
+% 论文标题：HALA: A Hybrid Dual-Population Optimizer Based on ALA and LSHADE
 function [Score, Position, Conv_curve, History_pos, Avg_curve, Div_curve, Traj_dim1] = ...
     HALA_optimizer(N, Max_iter, lb, ub, dim, fobj)
 
